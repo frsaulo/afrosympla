@@ -96,9 +96,9 @@ class InstallerController extends AbstractController {
     }
 
     /**
-     * @Route("/install.php/save-conviguration", name="save_conviguration")
+     * @Route("/install.php/save-configuration", name="save_configuration")
      */
-    public function saveConviguration(Request $request, AppServices $services, KernelInterface $kernel) {
+    public function saveConfiguration(Request $request, AppServices $services, KernelInterface $kernel) {
 
         $host = $request->query->get('host');
         $username = $request->query->get('username');
